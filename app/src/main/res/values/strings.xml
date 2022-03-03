@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Kotlin_Course</string>
+    <string name="hint_email">Email или телефон</string>
+    <string name="hint_password">Пароль</string>
+    <string name="logIn">Войти</string>
+    <string name="loginWithFacebook">Войти через Facebook</string>
 </resources>

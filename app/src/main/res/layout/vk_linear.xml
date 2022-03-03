@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="-16dp"
+        android:background="#0000"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/vk_ico"
+        />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:paddingHorizontal="16dp"
+        android:hint="@string/hint_email"
+        android:textSize="16sp"
+        android:background="@drawable/background_input_top"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingHorizontal="16dp"
+        android:hint="@string/hint_password"
+        android:textSize="16sp"
+        android:background="@drawable/background_input_bottom"
+        android:drawableEnd="@drawable/ic_baseline_help_outline_24"
+        android:drawableTint="#ccc"/>
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="14dp"
+        android:textSize="16sp"
+        android:text="@string/logIn"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/background_rounded_8dp"
+        android:backgroundTint="#b0d0f6"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/editbox_background"
+        android:text="@string/loginWithFacebook"
+        android:textAllCaps="false"
+        android:drawableStart="@drawable/facebook_24px"
+        android:paddingHorizontal="8dp"/>
+
+</LinearLayout>

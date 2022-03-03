@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/cancel"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/close_24px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/url"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="#DFDEDE"
+            android:inputType="textUri"
+            android:text="passport.yandex.ru"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/menu"
+            app:layout_constraintStart_toEndOf="@+id/cancel"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/bookmark"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:background="#00FFEBEE"
+            android:src="@drawable/bookmark"
+            app:layout_constraintStart_toEndOf="@+id/cancel"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#00FFFFFF"
+            android:rotation="90"
+            android:src="@drawable/more_24px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/backArrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/back_24px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cancel" />
+
+        <ImageView
+            android:id="@+id/yandexLogo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/yandex_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/url" />
+
+        <TextView
+            android:id="@+id/enterWithID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Войдите с Яндекс ID"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/yandexLogo" />
+
+        <TextView
+            android:id="@+id/enterYourID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="24dp"
+            android:text="Введите ваш ID"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterWithID" />
+
+        <EditText
+            android:id="@+id/numberOrPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:hint="Телефон или почта"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterYourID" />
+
+        <TextView
+            android:id="@+id/doNotRemember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:text="Не помню"
+            android:textColor="#154DF6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numberOrPost" />
+
+        <Button
+            android:id="@+id/signIn"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="40dp"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="#FFC107"
+            android:text="Войти"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doNotRemember" />
+
+        <Button
+            android:id="@+id/createID"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="#00FFFFFF"
+            android:backgroundTintMode="add"
+            android:text="Создать ID"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signIn" />
+
+        <TextView
+            android:id="@+id/loginWith"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Войти с помощью"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createID" />
+
+        <ImageButton
+            android:id="@+id/loginWithVK"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/vk_com_24px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginWith" />
+
+        <ImageButton
+            android:id="@+id/loginWithFacebook"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/facebook_24px"
+            app:layout_constraintEnd_toStartOf="@+id/loginWithGoogle"
+            app:layout_constraintStart_toEndOf="@id/loginWithVK"
+            app:layout_constraintTop_toBottomOf="@+id/loginWith" />
+
+        <ImageButton
+            android:id="@+id/loginWithGoogle"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/google_24px"
+            app:layout_constraintEnd_toStartOf="@+id/loginWithQR"
+            app:layout_constraintStart_toEndOf="@id/loginWithFacebook"
+            app:layout_constraintTop_toBottomOf="@+id/loginWith" />
+
+        <Button
+            android:id="@+id/loginWithQR"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="16dp"
+
+            android:drawableStart="@drawable/qr_code_24px"
+            android:drawablePadding="6dp"
+            android:text="QR-код"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@+id/loginWithMore"
+            app:layout_constraintStart_toEndOf="@id/loginWithGoogle"
+            app:layout_constraintTop_toBottomOf="@+id/loginWith" />
+
+        <ImageButton
+            android:id="@+id/loginWithMore"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/ic_baseline_more_horiz_24"
+            android:scaleType="fitCenter"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginWith" />
+
+        <TextView
+            android:id="@+id/IDIsTheKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Яндекс ID - ключ от всех сервисов"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loginWithGoogle" />
+
+        <TextView
+            android:id="@+id/learnMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Узнать больше"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IDIsTheKey" />
+
+        <TextView
+            android:id="@+id/lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginBottom="16dp"
+            android:text="Ru"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Помощь"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/copyright"
+            app:layout_constraintStart_toEndOf="@+id/lang" />
+
+        <TextView
+            android:id="@+id/copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="16dp"
+            android:text="© 2001-2021, Яндекс "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/learnMore"
+            app:srcCompat="@drawable/spinit" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
